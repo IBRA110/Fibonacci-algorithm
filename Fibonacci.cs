@@ -48,11 +48,11 @@ namespace Fibonacci
                 if (arrFib[i] == 1 && arrFib[i - 1] == 0)
                 {
                     length = i - 1;
-                    break;
+                    return arrFib[fibNumber % length];
                 }
             }
 
-            return arrFib[fibNumber % length];
+            return -1;
         }
     }
 }        
